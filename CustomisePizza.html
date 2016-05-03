@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Lato|Oswald|Slabo+27px|Source+Sans+Pro|Lora' rel='stylesheet' type='text/css'/>
+		<!-- Website Title & Description for Search Engine purposes -->
+
+		<title>Dominos Home Page</title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+    <div class="container" id="main">
+
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a class="navbar-brand" href="/"><img src="images/DominosTitle.png" alt="Dominos"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="Offers">
+								<a href="DominosHomePage.html">HOME</a>
+							</li>
+
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">MENU<strong class="caret"></strong></a>
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Veg-Pizza</a>
+									</li>
+
+									<li>
+										<a href="#">Non-Veg Pizza</a>
+									</li>
+
+									<li>
+										<a href="#">Side Orders</a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li class="dropdown-header">Offers</li>
+
+									<li>
+										<a href="#">Value-Added Packs</a>
+									</li>
+
+									<li>
+										<a href="#">Combo Special Offer</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search your location.." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>SIGN UP<strong class="caret"></strong></a>
+            	 <ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span>Login</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+									</li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase">Order Status</span></a>
+									</li>
+
+									<li class="divider"></li>
+
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->
+
+					</div><!-- end nav-collapse -->
+
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+
+
+<hr>
+<hr>
+<hr>
+
+    <div class="row" id="moreCourses">
+	<div class="col-12">
+		<h4>Customise your Pizza with extra toppings</h4>
+		<div class="thumbnails row">
+			<div class="col-6">
+			<div class="thumbnail">
+					<img src="images/veg_extravaganzaLarge.jpg" alt="VegPizza">
+
+					<!-- <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>39</div> -->
+
+					<div class="caption">
+						<h3>VEG-EXTRAVANZA</h3>
+
+						<p>Black Olives I Onion I Crisp Capsicum I Mushroom I FreshTomato I Golden Corn I Jalapeno I Extra Cheese</p>
+
+						<!-- <p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">Learn more</a></p> -->
+					</div><!-- end caption -->
+				</div><!-- end thumbnail -->
+			</div><!-- end col-6 -->
+
+			<div class="col-6" id="ToppingMenu">
+				<div class="thumbnail">
+          <!-- <div class="container"> -->
+  <h2>Add Extra Toppings to make your Pizza more Delightful!</h2>
+  <!-- <p><strong>Note:</strong> The <strong>data-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Choose Your Crust:</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+          <ul class="CrustType">
+            <li>
+            <a class="selected" id="wheatcrust" href="#"><img src="images/classic-hand-tossed.png" alt="crust icon">
+            Wheat Thin Crust</a>
+            </li>
+          <li>
+          <a class="selected" id="Cheeseburst" href="#"><img src="images/cheese-burst.png" alt="Pan crust icon">
+          Cheese Burst</a>
+        </li>
+        <li>
+        <a class="selected" id="Italiancrust" href="#"><img src="images/italian-crust.png" alt="crust icon">
+        Italian Crust</a>
+      </li>
+          </ul>
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Add Extra Toppings:</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+          <ul class="Toppings">
+            <li>
+            <a class="selected" id="Olives" href="#"><img src="images/toppingsOlives.jpg" alt="Olives">
+            Olives</a>
+          </li>
+          <li>
+          <a class="selected" id="Babycorn" href="#"><img src="images/babyCorn.jpg" alt="Babycorn">
+          Babycorn</a>
+        </li>
+        <li>
+        <a class="selected" id="Goldencorn" href="#"><img src="images/toppingsGoldenCorn.jpg" alt="Goldencorn">
+        Goldencorn</a>
+      </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div><!--End Panel Group-->
+				</div><!-- end thumbnail -->
+			</div><!-- end col-6 -->
+		</div><!-- end row -->
+	</div><!-- end col-12 -->
+</div><!-- end moreCourses -->
+
+  </div><!--end main container-->
+<hr>
+
+      <footer>
+      			<div class="container" id="Foo">
+      				<div class="row">
+      					<div class="col-sm-4">
+                  <img src="images/guarantee.png" alt="Dominos" class="Gurantee">
+      					<h6>*Conditions apply *For more details, please refer to the disclaimer section.</h6>
+      					</div><!-- end col-sm-2 -->
+
+      					<div class="col-sm-2">
+      						<img src="images/apps-icon-1.png" alt="PlayStore" class="GoogleAppsimg">
+                  <img src="images/apple-icon-2.png" alt="Apple" class="Appleimg">
+                  <img src="images/windows-icon-3.png" alt="Windows" class="Windowsimg">
+
+                  <p><h5>DOWNLOAD<br>OUR<br>
+                    MOBILE APPLICATION</h5></p>
+      					</div><!-- end col-sm-4 -->
+
+      					<div class="col-sm-6">
+      						<img src="images/secure.jpg" alt="Geo Trust" class="SecuredTrust">
+      						<ul class="unstyled">
+                    <li><a href="#">Disclaimer</a>|<a href="#">Privacy Policy</a>|<a href="#">FAQ</a>|<a href="#">Terms&Conditions</a>|<a href="#">Gift Vouchers</a></li>
+      						</ul>
+      					</div><!-- end col-sm-2 -->
+
+      					<div class="col-sm-2">
+      						<h6>All Rights Reserved. Copyright © Jubilant FoodWorks Ltd. Actual product may vary over menu page</h6>
+      					</div><!-- end col-sm-2 -->
+      				</div><!-- end row -->
+              <hr>
+              <p><h6>Order online to get 'Hot' and 'Fresh' pizzas at your door step within 30 min. You can also choose to pick up your favorite Pizza from Domino's after Ordering online.
+                Dominos delivers across various cities including Delhi-NCR, Gurgaon, Noida, Faridabad,
+                Maharashtra, Mumbai, Pune, Bangalore, Chennai, Hyderabad, Kolkata, Ahmedabad, Chandigarh, Indore, Jaipur and more.<h6></p>
+      			</div><!-- end container -->
+      		</footer>
+
+      <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    	<!-- First try for the online version of jQuery-->
+    	<script src="http://code.jquery.com/jquery.js"></script>
+
+    	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+    	<script src="includes/js/jquery-1.8.2.min.js"></script>
+
+    	<!-- Bootstrap JS -->
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+    	<!-- Custom JS -->
+    	<script src="includes/js/script.js"></script>
+
+    	</body>
+    </html>
